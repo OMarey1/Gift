@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+#content {
+    width: 100%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('./image.jpg');
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 15px;
+    word-wrap: break-word;
+    user-select: none;
+    animation: size 1.5s cubic-bezier(1, 0.26, 0.65, 0.94) 0.5s forwards;
+}
+
+@keyframes size {
+    0% {
+        font-size: 15px;
+    }
+
+
+    100% {
+        font-size: 3px;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff6b6b;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
